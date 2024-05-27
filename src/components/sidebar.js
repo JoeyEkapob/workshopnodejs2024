@@ -15,8 +15,7 @@ function Sidebar(){
   const fetchdata = async () => {
     try{
       const res = await axios.get(config.apiPath + '/user/info', config.headers())
-      console.log(res)
-      console.log(12312312)
+    
       if(res.data.result !== undefined){
         setUser(res.data.result)
       }
